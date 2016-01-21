@@ -16,6 +16,7 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
+gem 'aws-sdk-rails', '~> 1.0'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
@@ -32,7 +33,9 @@ group :test do
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
-  gem 'rails_12factor', '0.0.2'
-  gem 'puma',           '2.11.1'
+  #gem 'pg',             '0.17.1'
+  #gem 'rails_12factor', '0.0.2'
+  #gem 'puma',           '2.11.1'
+  gem 'mysql2', '~> 0.3.18'
+  gem 'unicorn', '~> 5.0', '>= 5.0.1'
 end
