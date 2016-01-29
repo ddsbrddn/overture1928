@@ -38,5 +38,5 @@ group :production do
   #gem 'rails_12factor', '0.0.2'
   #gem 'puma',           '2.11.1'
   gem 'mysql2', '~> 0.3.18'
-  gem 'unicorn', '~> 5.0', '>= 5.0.1'
+  #gem 'unicorn', '~> 5.0', '>= 5.0.1'
 end
